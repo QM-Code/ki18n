@@ -1,0 +1,50 @@
+{
+  "project": {
+    "title": "Karma JSON Internationalization SDK",
+    "id": "ki18n"
+  },
+  "git": {
+    "url": "https://github.com/QM-Code/ki18n",
+    "auth": "git@github.com:QM-Code/ki18n.git"
+  },
+  "cmake": {
+    "minimum_version": "3.20",
+    "tests": true,
+    "sdk": {
+      "package_name": "Ki18nSDK"
+    },
+    "dependencies": {
+      "KConfigSDK": {
+        "prefix": "../kconfig/build/{version}/sdk"
+      },
+      "KcliSDK": {
+        "prefix": "../kcli/build/{version}/sdk"
+      },
+      "KTraceSDK": {
+        "prefix": "../ktrace/build/{version}/sdk"
+      }
+    }
+  },
+  "build": {
+    "jobs": 4,
+    "type": "shared",
+    "demos": [
+      "bootstrap",
+      "sdk/alpha",
+      "sdk/beta",
+      "sdk/gamma",
+      "exe/core",
+      "exe/omega"
+    ],
+    "defaults": {
+      "demos": [
+        "bootstrap",
+        "sdk/alpha",
+        "sdk/beta",
+        "sdk/gamma",
+        "exe/core",
+        "exe/omega"
+      ]
+    }
+  }
+}
