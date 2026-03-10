@@ -40,6 +40,12 @@ The core demo exercises the basic config-backed language load path. The omega
 demo keeps the fuller config, asset, i18n, and backing-file flow that used to
 live in `kconfig/`.
 
+## Trace Integration
+
+`ki18n` now exposes `ki18n::GetTraceLogger()`. Operational warnings/errors from
+language asset loading flow through that logger, so executables that want to see
+them should attach it to their local `ktrace::Logger`.
+
 ## Coding Agents
 
 If you are using a coding agent, paste the following prompt:
