@@ -2,8 +2,8 @@
 
 JSON internationalization SDK extracted from `kconfig/`.
 
-`ki18n` currently loads translation assets through `KConfigSDK`, and it keeps
-direct `KcliSDK` and `KTraceSDK` imports in place for the planned inline CLI and
+`ki18n` currently loads translation assets through `KconfigSDK`, and it keeps
+direct `KcliSDK` and `KtraceSDK` imports in place for the planned inline CLI and
 trace integration work.
 
 ## Build SDK

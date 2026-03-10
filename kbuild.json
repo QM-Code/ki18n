@@ -14,13 +14,13 @@
       "package_name": "Ki18nSDK"
     },
     "dependencies": {
-      "KConfigSDK": {
+      "KconfigSDK": {
         "prefix": "../kconfig/build/{version}/sdk"
       },
       "KcliSDK": {
         "prefix": "../kcli/build/{version}/sdk"
       },
-      "KTraceSDK": {
+      "KtraceSDK": {
         "prefix": "../ktrace/build/{version}/sdk"
       }
     }
